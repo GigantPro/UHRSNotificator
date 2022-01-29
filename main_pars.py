@@ -12,7 +12,7 @@ driver = None
 options = None
 
 USER_UHRS_LOGIN = YOUR_MICROSOFT_LOGIN
-USER_UHRS_PASSWORD = YPUR_MICROSOFT_PASSWORD
+USER_UHRS_PASSWORD = YOUR_MICROSOFT_PASSWORD
 
 
 def json_read(file_name = 'data_of_tasks.json'):
