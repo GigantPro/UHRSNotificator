@@ -1,18 +1,20 @@
 import json
+import telebot
 from re import sub
 from tracemalloc import start
 from async_timeout import asyncio
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from all_keys import LOGIN, PASSWORD
 
 import time
 
 driver = None
 options = None
 
-USER_UHRS_LOGIN = YOUR_MICROSOFT_LOGIN
-USER_UHRS_PASSWORD = YPUR_MICROSOFT_PASSWORD
+USER_UHRS_LOGIN = LOGIN
+USER_UHRS_PASSWORD = PASSWORD
 
 
 def json_read(file_name = 'data_of_tasks.json'):
@@ -62,6 +64,14 @@ def check_apd(bot, loop):
             task_card = driver.find_elements_by_class_name("task-card")
             for i in task_card:
                 temp = str(i.text).split('\n')
+                temp2 = temp[temp.index('\uedff') + 2]
+                if temp2 == "\ue946":
+                    temp2 = temp[temp.index('\uedff') + 3]
+                try:
+                    if float(temp2.split()[0][1:]) < 10.0:
+                        continue
+                except:
+                    print(end='')
                 #['EntityCuration_Crowd', '\uedff', '0,05 $ / HIT', '~1442.6k HITs', 'Verify the business website', '4 days ago1 min / HIT', '\uf2bc', '\ue896', '\ue76e', 'Start']
                 #[name, $/hit, count_hit, description, time, todo]
                 name = '*'
@@ -75,9 +85,6 @@ def check_apd(bot, loop):
                     or 'describe' in name.lower() or 'satisfaction' in name.lower() or 'side by side' in name.lower():
                     mass.append('*❗️❗️❗️Best work❗️❗️❗️*')
                 mass.append(name)
-                temp2 = temp[temp.index('\uedff') + 2]
-                if temp2 == "\ue946":
-                    temp2 = temp[temp.index('\uedff') + 3]
                 mass.append(temp[temp.index('\uedff') + 1])
                 mass.append(temp2)
                 if temp2[0] == '0':
