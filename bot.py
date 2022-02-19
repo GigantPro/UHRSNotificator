@@ -1,5 +1,4 @@
-import asyncio
-from time import time
+import time
 import types
 from threading import Thread
 from random import randint
@@ -10,18 +9,27 @@ import secrets
 import telebot
 from telebot import types
 
-from all_keys import TOKEN
-from main_pars import check_apd, json_read, json_write
+from all_keys import TOKEN, ADMINS
+from main_pars import start, json_read, json_write
 
 
 bot = telebot.TeleBot(TOKEN)
 
-#loop = asyncio.get_event_loop()
 
-# task_maneger_start = Thread(target=check_apd, args=(bot, loop))
-# task_maneger_start.start()
+def check_tokens():
+    time.sleep(300)
+    js = json_read(file_name='users.json')
+    itog = []
+    for i in js:
+        itog.append([i[0], i[1], i[2] - 5])
+    json_write(itog, file_name='users.json')
 
-admins_id = [1041024979]
+task_maneger_start = Thread(target=start, args=(bot,))
+task_maneger_start.start()
+
+check = Thread(target=check_tokens)
+check.start()
+ 
 
 create_tokens_ls = []   # {'id': ID, 'time': TIME_MINUTS}
 
@@ -149,7 +157,7 @@ def subsc(message: telebot.types.Message):
         json_write(json_read('users.json') + [[message.from_user.id, message.from_user.full_name, temp[1]]], file_name='users.json')
     bot.send_message(message.from_user.id, f'Вы активировали токен доступа на {temp[1]} минут!')
 
-def admin(message:telebot.types.Message):
+def admin(message: telebot.types.Message):
     if message.text == '/admin':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         item1 = types.KeyboardButton('Показать всех пользователей')
@@ -157,6 +165,9 @@ def admin(message:telebot.types.Message):
         markup.add(item1, item2)
         bot.send_message(message.chat.id, 'Что поделаем?', reply_markup=markup)
     elif message.text == 'Показать всех пользователей':
+        if json_read('users.json') == []:
+            bot.send_message(message.from_user.id, f'На данный момент нет активных пользователей.')
+            return
         for i in json_read('users.json'):
             bot.send_message(message.from_user.id, f'*ID:* {i[0]}\n*Name:* {i[1]}\n*Time:* {i[2]}', parse_mode="Markdown")
     elif message.text == 'Закрыть':
@@ -175,27 +186,26 @@ def remove(message: types.Message):
     bot.send_message(message.chat.id, f'У меня в базе нету такого пользователя.')
 
 @bot.message_handler()
-def echo_sent(message):
-    if message.text in ['Установить срок', 'Сгенерировать', '1 день', '1 неделя', '1 месяц']:
+def echo_sent(message: telebot.types.Message):
+    if message.text in ['Установить срок', 'Сгенерировать', '1 день', '1 неделя', '1 месяц'] and message.from_user.id in ADMINS:
         continue_create_token_func(message)
     elif message.text.split()[0] == '/sub':
         subsc(message)
-    elif message.text == '/all':
-        for i in json_write(file_name='data_of_tasks.json'):
+    elif message.text == '/all' and message.from_user.id in [x[0] for x in json_read(file_name='users.json')] + ADMINS:
+        for i in json_read(file_name='data_of_tasks.json'):
             bot.send_message(message.chat.id, '\n'.join(i), parse_mode="Markdown")
-    elif message.text == '/create' and message.from_user.id in admins_id:
-        create_token_func(message)
-    elif message.text in ['/admin', 'Показать всех пользователей', 'Закрыть']:
+    elif message.text == '/create' and message.from_user.id in ADMINS:
+        create_token_func(message) 
+    elif message.text in ['/admin', 'Показать всех пользователей', 'Закрыть'] and message.from_user.id in ADMINS:
         admin(message)
-    elif message.text.split()[0] == '/rem':
+    elif message.text.split()[0] == '/rem' and message.from_user.id in ADMINS:
         remove(message)
     else:
-        if message.from_user.id in json_read(file_name='subscr.json'):
-            bot.send_message(message.chat.id, "вы уже подписались на рассылку.")
-            return
-        json_write(json_read(file_name='subscr.json') + [message.from_user.id], file_name='subscr.json')
-        bot.send_message(message.chat.id, "вы подписались на рассылку.")
+        bot.send_message(message.chat.id, help_cmd, parse_mode="Markdown")
 
-
+help_cmd = '''Привет!
+Этот бот посвящен уведомлениям от кликворкер UHRS
+Для доступа к нему - @uservshoke
+Тех поддержка - @gigantpro2000'''
 
 bot.polling(none_stop=True)

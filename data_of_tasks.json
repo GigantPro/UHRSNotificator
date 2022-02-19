@@ -1,191 +1,198 @@
 [
   [
-    "*NewOffensive Text Classification*",
-    "0,0025 $ / HIT",
-    "~23.7k HITs"
+    "*EntityCuration_Crowd*",
+    "0,05 $ / HIT",
+    "~1529.6k HITs"
   ],
   [
-    "*Crowd Spam Labeling - English*",
-    "0,04 $ / HIT",
-    "~7.9k HITs"
-  ],
-  [
-    "*QC Result Quality V2 English*",
-    "0,0325 $ / HIT",
-    "~5.9k HITs"
+    "*EntityCuration_Crowd_HOO*",
+    "0,05 $ / HIT",
+    "~214.6k HITs"
   ],
   [
     "*LocalQR_en_ProductModule*",
     "0,02 $ / HIT",
-    "~2k HITs"
+    "~5.5k HITs"
   ],
   [
     "*Russian Query Relationship*",
-    "0,05 $ / HIT",
+    "0,10 $ / HIT",
     "~1.3k HITs"
   ],
   [
-    "*Ad Quality Check*",
+    "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
+    "*Compare Image Results Side by Side RU*",
+    "0,005 $ / HIT",
+    "~900 HITs"
+  ],
+  [
+    "*News Entry Judgement_ru*",
     "0,02 $ / HIT",
-    "~1k HITs"
+    "~400 HITs"
   ],
   [
     "*QC Result Quality V2 Russian*",
     "0,03 $ / HIT",
-    "~900 HITs"
+    "~400 HITs"
+  ],
+  [
+    "*NewHow closely does this ad match the user's search? (PA AC) (English)*",
+    "0,015 $ / HIT",
+    "~300 HITs"
+  ],
+  [
+    "*Search for businesses by category (English)*",
+    "0,04 $ / HIT",
+    "~300 HITs"
+  ],
+  [
+    "*ru-RU_FTW_Crowd_HOO*",
+    "0,03 $ / HIT",
+    "~100 HITs"
+  ],
+  [
+    "*Does the store have this product? (English)*",
+    "0,04 $ / HIT",
+    "~100 HITs"
+  ],
+  [
+    "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
+    "*MMRepresentativeImageV2*",
+    "0,008 $ / HIT",
+    "~100 HITs"
+  ],
+  [
+    "*[CAQ] Answer Credibility [EN]*",
+    "0,05 $ / HIT",
+    "~100 HITs"
+  ],
+  [
+    "*ru-RU_EntityCuration_Crowd_HOO*",
+    "0,07 $ / HIT",
+    "~100 HITs"
+  ],
+  [
+    "*Is the result what the user was searching for? (English)*",
+    "0,03 $ / HIT",
+    "~100 HITs"
+  ],
+  [
+    "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
+    "*Choose the best description of Video query intent (QI-L2-Video) (en-xx)*",
+    "0,05 $ / page (5 HITs)",
+    "~100 HITs"
+  ],
+  [
+    "*ru-RU_FTW_Crowd_Website*",
+    "0,03 $ / HIT",
+    "~90 HITs"
+  ],
+  [
+    "*Crowd Spam Labeling - English*",
+    "0,0325 $ / HIT",
+    "~80 HITs"
+  ],
+  [
+    "*Is the result reasonable given user query? (English)*",
+    "0,03 $ / HIT",
+    "~80 HITs"
+  ],
+  [
+    "*Search for businesses by specific category (English)*",
+    "0,04 $ / HIT",
+    "~70 HITs"
+  ],
+  [
+    "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
+    "*MMWatermarkImageDetection*",
+    "0,076 $ / page (20 HITs)",
+    "~50 HITs"
+  ],
+  [
+    "*en_Map Simple Relevance (MAPSv2 M3)*",
+    "0,018 $ / HIT",
+    "~50 HITs"
+  ],
+  [
+    "*Search Intent (Russian)*",
+    "0,0183 $ / HIT",
+    "~40 HITs"
   ],
   [
     "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
     "*Search Satisfaction (Russian)*",
     "0,03 $ / HIT",
-    "~800 HITs"
+    "~40 HITs"
   ],
   [
-    "*Would the user want this alternative or additional product? (English)*",
-    "0,015 $ / HIT",
-    "~800 HITs"
+    "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
+    "*Search Satisfaction (English)*",
+    "0,0273 $ / HIT",
+    "~40 HITs"
+  ],
+  [
+    "*Does the store have this product? (Russian Language)*",
+    "0,055 $ / HIT",
+    "~40 HITs"
+  ],
+  [
+    "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
+    "*Page Usefulness V2 Russian*",
+    "0,03 $ / HIT",
+    "~30 HITs"
+  ],
+  [
+    "*QC Result Quality V2 English*",
+    "0,0325 $ / HIT",
+    "~30 HITs"
+  ],
+  [
+    "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
+    "*Simplified Image Intent Query Labeling - English*",
+    "0,02 $ / HIT",
+    "~700 HITs"
+  ],
+  [
+    "*\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043f\u043e\u0438\u0441\u043a\u0430 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u0442\u043e, \u0447\u0442\u043e \u0438\u0441\u043a\u0430\u043b \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c? (\u0421\u0435\u0442\u0435\u0432\u044b\u0435 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438)*",
+    "0,04 $ / HIT",
+    "~30 HITs"
+  ],
+  [
+    "*Is the result reasonable given user query? (Russian Language)*",
+    "0,03 $ / HIT",
+    "~30 HITs"
+  ],
+  [
+    "*Identify relevant and interesting topics*",
+    "0,08 $ / HIT",
+    "~20 HITs"
+  ],
+  [
+    "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
+    "*Image Query Result Relevance T2 Russian*",
+    "0,15 $ / page (5 HITs)",
+    "~20 HITs"
   ],
   [
     "*Are these terms a good match (TA KW) (English)*",
     "0,075 $ / page (5 HITs)",
-    "~800 HITs"
-  ],
-  [
-    "*Crowd Spam Labeling - Russian*",
-    "0,04 $ / HIT",
-    "~800 HITs"
-  ],
-  [
-    "*[Webdata][Bling][web recommendation]*",
-    "0,035 $ / HIT",
-    "~500 HITs"
-  ],
-  [
-    "*en_Map Deep Relevance (MAPSv2 M4)*",
-    "0,03 $ / HIT",
-    "~400 HITs"
-  ],
-  [
-    "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
-    "*Choose the best description of Image query intent (QI-L2-Image) (ru-xx)*",
-    "0,05 $ / page (5 HITs)",
-    "~300 HITs"
-  ],
-  [
-    "*Text Ads - Find Brand and Shopping Related Terms (English)*",
-    "0,015 $ / HIT",
-    "~100 HITs"
-  ],
-  [
-    "*ru-RU_FTW_Crowd_HOO*",
-    "0,03 $ / HIT",
-    "~90 HITs"
-  ],
-  [
-    "*Does the store have this product? (English)*",
-    "0,04 $ / HIT",
-    "~80 HITs"
-  ],
-  [
-    "*ru-RU_FTW_Crowd_Website*",
-    "0,03 $ / HIT",
-    "~80 HITs"
-  ],
-  [
-    "*LocalQR_ru_ReviewsFromWeb*",
-    "0,02 $ / HIT",
-    "~70 HITs"
-  ],
-  [
-    "*Quantus Relevance EN [2 Labels]*",
-    "0,05 $ / HIT",
-    "~60 HITs"
-  ],
-  [
-    "*Smart hover icon on Edge browser*",
-    "0,02 $ / HIT",
-    "~50 HITs"
-  ],
-  [
-    "*ru-RU_FTW_Crowd_Closure*",
-    "0,03 $ / HIT",
-    "~40 HITs"
-  ],
-  [
-    "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
-    "*Image Query Result Relevance T2 English*",
-    "0,20 $ / page (5 HITs)",
-    "~40 HITs"
-  ],
-  [
-    "*\u0421\u0440\u0430\u0432\u043d\u0438\u0442\u0435 \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b \u041f\u043e\u0438\u0441\u043a\u0430 \u2013 \u0420\u0443\u0441\u0441\u043a\u0438\u0439 \u044f\u0437\u044b\u043a - V2*",
-    "0,09 $ / HIT",
-    "~40 HITs"
-  ],
-  [
-    "*ru_Map Result Quality (MAPSv2 M5)*",
-    "0,021 $ / HIT",
     "~20 HITs"
   ],
   [
-    "*ru_Map Deep Relevance (MAPSv2 M4)*",
-    "0,015 $ / HIT",
-    "~10 HITs"
-  ],
-  [
-    "*Choose best description of query intent (Russian)*",
-    "0,05 $ / page (5 HITs)",
-    "~10 HITs"
-  ],
-  [
-    "*Choose best description of query intent (English)*",
-    "0,05 $ / page (5 HITs)",
-    "~10 HITs"
+    "*Search for businesses by category (Russian language)*",
+    "0,055 $ / HIT",
+    "~20 HITs"
   ],
   [
     "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
-    "*Choose the best description of Image query intent (QI-L2-Image) (en-xx)*",
-    "0,05 $ / page (5 HITs)",
-    "~10 HITs"
-  ],
-  [
-    "*en_Map Simple Relevance (MAPSv2 M3)*",
-    "0,018 $ / HIT",
-    "~10 HITs"
-  ],
-  [
-    "*en-US_FTW_Crowd_HOO*",
-    "0,05 $ / HIT",
-    "~10 HITs"
-  ],
-  [
-    "*Side By Side Webpage comparison*",
-    "0,03 $ / HIT",
-    "~10 HITs"
-  ],
-  [
-    "*ru_Map Result Format (MAPSv2 M6)*",
-    "0,021 $ / HIT",
-    "~5 HITs"
-  ],
-  [
-    "*SBS iframe Webpage comparison - RU*",
-    "0,03 $ / HIT",
-    "~5 HITs"
-  ],
-  [
-    "*Search for businesses by category (English)*",
-    "0,04 $ / HIT",
-    "~5 HITs"
-  ],
-  [
-    "*News Publisher Authority Assessment pre-questionnaire*",
+    "*3c-Images-Quality*",
     "0,01 $ / HIT",
-    "~5 HITs"
+    "~50 HITs"
   ],
   [
-    "*QC Result Quality V1.0 [1DCG] (Russian)*",
-    "0,03 $ / HIT",
-    "~5 HITs"
+    "*\u2757\ufe0f\u2757\ufe0f\u2757\ufe0fBest work\u2757\ufe0f\u2757\ufe0f\u2757\ufe0f*",
+    "*Search Engine Side by Side (Russian)*",
+    "0,15 $ / HIT",
+    "~30 HITs"
   ]
 ]
